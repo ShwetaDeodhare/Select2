@@ -9,8 +9,6 @@ html,body{
 }
 
 .wrapper{
-    /*width: 100%;*/
-    /*max-width: 1200px;*/
     margin: 0 auto;
 }
 
@@ -21,17 +19,19 @@ html,body{
 
 }
 
+/*Allocate CSS Flex to wrapper div.*/
 .myFlexWrapper{
     display: flex;
     justify-content: space-between;
     background: #c6c6c6;
-    flex: 1;
     height: 100vh;
     
 }
+/*As these are child divs they will get flex properties of parent myFlexWrapper!*/
 .wrapper1,.wrapper2{
     display: flex;
     align-items: flex-end;
+    /*All child elements of this div should go to end bcoz of flex-end property.*/
 }
 .common{
     width:150px;
@@ -43,6 +43,7 @@ html,body{
     background-color: red;
     align-self: center;
     flex: 1 1 auto;
+    /*This div will align to center inspite of default properties*/
 }
 
 .div2{
