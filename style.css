@@ -1,0 +1,56 @@
+*{
+    font-family: verdana;
+    margin: 0;
+}
+
+html,body{
+    background: #eee;
+    min-height:100vh;
+}
+
+.wrapper{
+    /*width: 100%;*/
+    /*max-width: 1200px;*/
+    margin: 0 auto;
+}
+
+/* Section Style */
+
+.mySection{
+    background: #c6c6c6;
+
+}
+
+.myFlexWrapper{
+    display: flex;
+    justify-content: space-between;
+    background: #c6c6c6;
+    flex: 1;
+    height: 100vh;
+    
+}
+.wrapper1,.wrapper2{
+    display: flex;
+    align-items: flex-end;
+}
+.common{
+    width:150px;
+    height:150px;
+    
+}
+
+.div1{
+    background-color: red;
+    align-self: center;
+    flex: 1 1 auto;
+}
+
+.div2{
+    background-color: blue;
+    
+}
+
+.div3{
+    background-color: orange;
+    align-self:flex-start;
+}
